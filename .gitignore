@@ -1,0 +1,50 @@
+# Local credentials and deployment settings
+.env
+.env.*
+!.env.example
+.secrets/
+.secrets.*
+credentials*
+*.pem
+*.key
+*.p12
+*.pfx
+*.htpasswd
+
+# Local student data, mappings and exported results
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+*.tsv
+*.docx
+*.ods
+!public/namenszuordnung-vorlage.xlsx
+imports/
+exports/
+private/
+local/
+
+# Internal review notes and server-specific deployment configuration
+/AUDIT.md
+/VEROEFFENTLICHUNG.md
+/UPLOAD_PRUEFUNG.md
+/docker-compose.yml
+/docker-compose.override.yml
+/docker-compose.override.yaml
+
+# Dependencies, caches and browser test output
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+*.har
+*.trace
+playwright-report/
+test-results/
+screenshots/
+traces/
+coverage/
